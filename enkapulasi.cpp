@@ -21,5 +21,7 @@ int main() {
 	lampuRumah.setSaklarNo(2, "Lampu Kamar Tidur");
 	lampuRumah.setSaklarNo(3, "Lampu Dapur");
 
-	
+	cout << lampuRumah.getSaklarNo(0) << endl;
+	cout << lampuRumah.getSaklarNo(1) << endl;
+	Contoh Enkapsulasi dan Pengaksesan Array Objek dalam C++
 }
