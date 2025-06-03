@@ -1,8 +1,7 @@
-
 #include <iostream>
 using namespace std;
 
-class orang {
+class pelajar {
 public:
 	int umur;
 
@@ -16,9 +15,27 @@ public:
 cclass pekerja : public orang {
 public:
 
-	pekerja(int pUmur) :
+	pelajar(int pUmur) :
 		orang(pUmur)
 	{
-		cout << "pekerja dibuat\n" << endl;
+		cout << "pelajar dibuat\n" << endl;
 	}
 };
+
+class budi : public pekerja, public pelajar {
+public:
+
+	budi(int pUmur) :
+		pekerja(pUmur)
+		pelajar(pUmur)
+        orang(Pumur)
+	{
+		cout << "Budi dibuat\n" << endl; // hal ini dapat dilakukan jika menggunkan virtual
+	}
+};
+
+int main() {
+	budi a(12);
+
+	return 0;
+}
